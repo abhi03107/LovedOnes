@@ -1,0 +1,306 @@
+@font-face {
+    font-family: "Brush";
+    src: url('Mighty.ttf');
+}
+@font-face {
+    font-family: "Num";
+    src: url('edo.ttf');
+}
+body{
+    background-image: url('../img/bg.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-color: rgba(218, 0, 54, 0.2);
+    background-blend-mode: overlay;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+#btn{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 131, 228);
+    cursor: pointer;
+}
+
+.center-wrap{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in;
+}
+.white-cover{
+    position: relative;
+    width: 390px;
+    height: 500px;
+    padding: 30px;
+    background-color: rgb(255, 251, 241);
+    border-radius: 5px;
+    box-shadow: 5px 11px 19px -11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 11px 19px -11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 11px 19px -11px rgba(0,0,0,0.75);
+    overflow: hidden;
+    opacity: 0;
+    animation: back 189s ease-in-out 0s;
+}
+.img-class{
+    position: absolute;
+    width: 390px;
+    height: 450px;
+}
+.img-class img{
+    object-fit: cover;
+    width: 390px;
+    height: 410px;
+    border-radius: 2px;
+}
+.img-class video{
+    object-fit: cover;
+    width: 390px;
+    height: 410px;
+    border-radius: 2px;
+}
+.big{
+    position: absolute;
+    top: 140px;
+    left: 47.5%;
+    transform: translate(-47.5%,-50%);
+    font-family: "Brush";
+    font-size: 90px;
+    text-align: center;
+}
+.small{
+    position: absolute;
+    top: 90px;
+    transform: translate(0%,-25%);
+    font-family: "Brush";
+    font-size: 90px;
+    text-align: center;
+}
+.caption{
+    position: relative;
+    top: -50px;
+    font-family: "Num";
+    font-size: 60px;
+    text-align: center;
+}
+.img-class:nth-child(1){
+    animation: photo 10s ease-in-out 1s;
+    opacity: 0;
+}
+.img-class:nth-child(2){
+    animation: photo 2.5s ease-in-out 11s;
+    opacity: 0;
+}
+.img-class:nth-child(3){
+    animation: photo 5.5s ease-in-out 14s;
+    opacity: 0;
+}
+.img-class:nth-child(4){
+    animation: photo 8s ease-in-out 20.5s;
+    opacity: 0;
+}
+.img-class:nth-child(5){
+    animation: photo 10s ease-in-out 29s;
+    opacity: 0;
+}
+.img-class:nth-child(6){
+    animation: photo 5s ease-in-out 39s;
+    opacity: 0;
+}
+.img-class:nth-child(7){
+    animation: photo 10s ease-in-out 45s;
+    opacity: 0;
+}
+.img-class:nth-child(8){
+    animation: photo 3s ease-in-out 55s;
+    opacity: 0;
+}
+.img-class:nth-child(9){
+    animation: photo 5s ease-in-out 59s;
+    opacity: 0;
+}
+.img-class:nth-child(10){
+    animation: photo 2s ease-in-out 64s;
+    opacity: 0;
+}
+.img-class:nth-child(11){
+    animation: photo 2s ease-in-out 66s;
+    opacity: 0;
+}
+.img-class:nth-child(12){
+    animation: photo 2s ease-in-out 68s;
+    opacity: 0;
+}
+.img-class:nth-child(13){
+    animation: photo 3s ease-in-out 70s;
+    opacity: 0;
+}
+.img-class:nth-child(14){
+    animation: photo 5s ease-in-out 73s;
+    opacity: 0;
+}
+.img-class:nth-child(15){
+    animation: photo 7.5s ease-in-out 78.5s;
+    opacity: 0;
+}
+.img-class:nth-child(16){
+    animation: photo 4.5s ease-in-out 86.5s;
+    opacity: 0;
+}
+.img-class:nth-child(17){
+    animation: photo 6.5s ease-in-out 90.5s;
+    opacity: 0;
+}
+.img-class:nth-child(18){
+    animation: photo 8.5s ease-in-out 97s;
+    opacity: 0;
+}
+.img-class:nth-child(19){
+    animation: photo 10.5s ease-in-out 106s;
+    opacity: 0;
+}
+.img-class:nth-child(20){
+    animation: photo 4.5s ease-in-out 116.5s;
+    opacity: 0;
+}
+.img-class:nth-child(21){
+    animation: photo 10.5s ease-in-out 121s;
+    opacity: 0;
+}
+.img-class:nth-child(22){
+    animation: photo 3.5s ease-in-out 130.5s;
+    opacity: 0;
+}
+.img-class:nth-child(23){
+    animation: photo 3s ease-in-out 134s;
+    opacity: 0;
+}
+.img-class:nth-child(24){
+    animation: photo 3s ease-in-out 137s;
+    opacity: 0;
+}
+.img-class:nth-child(25){
+    animation: photo 3.5s ease-in-out 140s;
+    opacity: 0;
+}
+.img-class:nth-child(26){
+    animation: photo 4.5s ease-in-out 144s;
+    opacity: 0;
+}
+.img-class:nth-child(27){
+    animation: photo 5s ease-in-out 149s;
+    opacity: 0;
+}
+.img-class:nth-child(28){
+    animation: photo 5s ease-in-out 154s;
+    opacity: 0;
+}
+.img-class:nth-child(29){
+    animation: photo 5s ease-in-out 159s;
+    opacity: 0;
+}
+.img-class:nth-child(30){
+    animation: photo 4.5s ease-in-out 164.5s;
+    opacity: 0;
+}
+.img-class:nth-child(31){
+    animation: photo 5s ease-in-out 169s;
+    opacity: 0;
+}
+.img-class:nth-child(32){
+    animation: photo 4.5s ease-in-out 174s;
+    opacity: 0;
+}
+.img-class:nth-child(33){
+    animation: photo 8s ease-in-out 179s;
+    opacity: 0;
+}
+
+.display{
+    display: flex;
+}
+.count{
+    background-color: #192a56;
+	color: #fff;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+#count{
+	font-size: 50px;
+	margin: 0;
+}
+
+.count{
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: 2px;
+	margin: 0;
+}
+@media all and (max-width:768px) {
+    .white-cover{
+        width: 290px;
+        height: 450px;
+        padding: 20px 15px;
+    }
+    .img-class{
+        width: 290px;
+        height: 400px;
+    }
+    .img-class img{
+        width: 290px;
+        height: 400px;
+    }
+    .img-class video{
+        width: 290px;
+        height: 400px;
+    }
+    .big, .small{
+        font-size: 60px;
+    }
+    .caption{
+        font-size: 36px;
+    }
+    .anime{
+        width: 290px;
+        height: 300px!important;
+    }
+}
+
+@keyframes photo{
+    15%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes back{
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
